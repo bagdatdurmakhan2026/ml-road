@@ -18,7 +18,8 @@ class CustomLinearRegression:
         for _ in range(self.n_iters):
             # Предсказание: y_pred = X * w + b
             y_predicted = np.dot(X, self.weights) + self.bias
-
+            # Суть: Это обычная школьная формула прямой линии $y = kx + b$, только для матриц. Мы умножаем матрицу признаков на веса и прибавляем смещение.
+            # 
             # Считаем градиенты (производные MSE по w и b)
             dw = (1 / n_samples) * np.dot(X.T, (y_predicted - y))
             db = (1 / n_samples) * np.sum(y_predicted - y)
