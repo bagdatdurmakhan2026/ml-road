@@ -1,27 +1,23 @@
 # 🚀 Machine Learning & MLOps Roadmap
 
-Репозиторий для практического изучения и разработки ML-моделей, классических алгоритмов и MLOps-пайплайнов с нуля.
+A hands-on repository dedicated to building Machine Learning models, classical algorithms, and production-grade MLOps pipelines from scratch.
 
----
+## 🛠 Tech Stack
 
-## 🛠 Стек технологий
+- **Languages & Libraries:** Python 3.14+, NumPy, Pandas, Pydantic
+- **Server & API:** FastAPI, Uvicorn, Pickle (Serialization)
+- **Tools:** Git, Swagger UI
 
-* **Языки и библиотеки:** Python 3.14+, NumPy, Pandas, Pydantic
-* **Сервер и API:** FastAPI, Uvicorn, Pickle (сериализация)
-* **Инструменты:** Git, Swagger UI
-
----
-
-## 📁 Структура проекта
+## 📁 Project Structure
 
 ```text
 .
-├── 01_math/              # Математический базис ML (линейная алгебра, матанализ, теравер)
-├── 02_numpy_pandas/      # Работа с данными, векторизация, обработка массивов
-├── 03_classical_ml/      # Реализация алгоритмов ML с нуля и инференс-сервисы
-│   ├── app.py            # FastAPI сервис для предсказаний (/predict)
-│   ├── train.py          # Скрипт обучения и сохранения модели
-│   └── model.pkl         # Сериализованная модель
-├── 04_deep_learning/     # Глубокое обучение и нейросети
-├── 05_nlp/               # Обработка естественного языка
-└── 06_projects/          # Итоговые сквозные проекты
+├── 01_math/              # Mathematical foundations of ML (Linear Algebra, Calculus)
+├── 02_numpy_pandas/      # Data manipulation, vectorization, preprocessing
+├── 03_classical_ml/      # Custom ML algorithms & model inference
+│   ├── app.py            # FastAPI service for predictions (/predict)
+│   ├── train.py          # Training and model serialization script
+│   └── model.pkl         # Serialized model artifact
+├── 04_deep_learning/     # Deep learning & neural networks from scratch
+├── 05_nlp/               # Natural Language Processing (NLP) foundations
+└── 06_projects/          # End-to-end practical projects & microservices
