@@ -1,13 +1,13 @@
-# 🚀 Sandbox & Introductory Module
+# Sandbox & Introductory Module
 
-A dedicated directory for quick experiments, hypothesis testing, and preliminary Python scripts.
+Директория для быстрых экспериментов, проверки гипотез и начальных скриптов Python.
 
-## 🛠 Directory Contents
+## 🛠 Содержимое директории
 
-- **`1.py`**: A baseline script for rough testing and practicing basic syntactic constructs or algorithms.
+- **`1.py`**: Базовый скрипт для черновых тестов и отработки базовых синтаксических конструкций или алгоритмов.
 
-## 🚀 How to Run
+## 🚀 Как запустить
 
-Run the test script:
+Запуск тестового скрипта:
 ```bash
 python 1.py
