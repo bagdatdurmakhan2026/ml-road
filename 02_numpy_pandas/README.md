@@ -1,17 +1,17 @@
-# Data Wrangling & Preparation
+# 🚀 Data Wrangling & Preparation
 
-Модуль для первичной обработки, очистки и трансформации данных (Data Wrangling) перед подачей в модели машинного обучения.
+A module dedicated to raw data processing, cleaning, and transformation (Data Wrangling) prior to feeding datasets into machine learning models.
 
-## 🛠 Содержимое директории
+## 🛠 Directory Contents
 
 - **`data_wrangling.py`**:
-  - Скрипты для работы с сырыми данными, фильтрации и приведения к нужному формату.
-  - Очистка пропусков, преобразование типов и подготовка датасетов.
+  - Scripts for handling raw data, filtering, and formatting.
+  - Handling missing values, type casting, and dataset preparation.
 - **`1.py`**:
-  - Вспомогательный скрипт для черновых экспериментов с датасетами.
+  - Auxiliary script for draft dataset experiments.
 
-## 🚀 Как запустить
+## 🚀 How to Run
 
-Запуск скрипта подготовки данных:
+Run the data preparation script:
 ```bash
-python data_wrangling.py
+#python data_wrangling.py

@@ -1,21 +1,21 @@
-# 05_nlp: Natural Language Processing Fundamentals
+# 🚀 05_nlp: Natural Language Processing Fundamentals
 
-В этом модуле реализованы базовые алгоритмы обработка естественного языка (NLP) и классификации текстов с нуля с использованием библиотеки NumPy.
+This module implements core Natural Language Processing (NLP) and text classification algorithms from scratch using NumPy.
 
-## 🛠 Содержимое директории
+## 🛠 Directory Structure
 
-- **`vectorizer.py`**: 
-  - Собственная реализация векторайзера **Bag-of-Words (BoW)**.
-  - Извлечение уникального словаря из текстового корпуса.
-  - Преобразование текстовых строк в числовые векторы частот слов.
+- **`vectorizer.py`**:
+  - Custom implementation of the **Bag-of-Words (BoW)** text vectorizer.
+  - Extraction of a unique vocabulary from a text corpus.
+  - Transformation of text strings into numerical word-frequency vectors.
 
 - **`text_classifier.py`**:
-  - Однослойная нейросеть / линейный классификатор (`SimpleSpamClassifier`).
-  - Реализация прямого прохода (Forward Pass) и функции потерь (MSE Loss).
-  - Обучение модели с помощью градиентного спуска (Gradient Descent) для бинарной классификации текстов.
+  - Single-layer neural network / linear classifier (`SimpleSpamClassifier`).
+  - Implementation of the Forward Pass and loss function (MSE Loss).
+  - Model training powered by **Gradient Descent** for binary text classification.
 
-## 🚀 Как запустить
+## 🚀 How to Run
 
-1. **Тестирование векторайзера:**
+1. Test the vectorizer:
    ```bash
    python 05_nlp/vectorizer.py

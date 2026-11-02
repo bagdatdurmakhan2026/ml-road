@@ -1,21 +1,21 @@
-# Neural Network & API Service
+# 🚀 Neural Network & API Service
 
-Модуль с реализацией базовой архитектуры нейронной сети с нуля на NumPy и её интеграцией с веб-сервисом на FastAPI.
+A module implementing a baseline neural network architecture from scratch using NumPy, integrated with a FastAPI web service.
 
-## 🛠 Содержимое папки
+## 🛠 Directory Structure
 
 - **`neural_network.py`**:
-  - Реализация класса нейронной сети с прямолинейным проходом (Forward Propagation).
-  - Инициализация случайных весов и параметров смещения (Bias).
-  - Расчет предсказаний на основе входов без сторонних ML-фреймворков.
+  - Implementation of the neural network class featuring Forward Propagation.
+  - Initialization of random weights and bias parameters.
+  - Making predictions based on inputs without relying on external ML frameworks.
 
 - **`api.py`**:
-  - Микросервис на FastAPI для работы с нейросетью по HTTP.
-  - Валидация входных данных через Pydantic.
-  - Интерактивная документация Swagger для проверки предсказаний модели.
+  - FastAPI microservice exposing neural network inference over HTTP.
+  - Request data validation using **Pydantic**.
+  - Interactive Swagger documentation for testing model predictions.
 
-## 🚀 Как запустить
+## 🚀 How to Run
 
-1. **Тестирование нейросети:**
+1. Test the neural network script:
    ```bash
    python neural_network.py

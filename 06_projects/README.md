@@ -1,19 +1,20 @@
-# 06_projects: Spam Classifier & API Service
+# 🚀 06_projects: Spam Classifier & API Service
 
-Мини-проект по созданию классификатора текстов (Spam / Normal) с нуля и его обертке в REST API микросервис.
+An end-to-end practical project implementing a custom text classification model (Spam / Normal) from scratch, integrated into a production-grade REST API microservice.
 
-## 🛠 Содержимое папки
+## 🛠 Directory Structure
 
-- **`spam_detector.py`**: Скрипт обучения модели на NumPy.
-  - Векторизация текста методом Bag-of-Words (BoW) без сторонних ML-библиотек.
-  - Полносвязный линейный слой для предсказания весов.
-  - Обучение модели с помощью градиентного спуска (MSE Loss).
-- **`spam_api.py`**: Микросервис на FastAPI для живой инференс-проверки сообщений.
-  - Принимает JSON с текстом сообщений (`POST /predict`).
-  - Возвращает оценку (score) и итоговый вердикт (🚨 СПАМ / ✅ Норм).
+- **`spam_detector.py`**: Model training script built on pure NumPy.
+  - Text vectorization using **Bag-of-Words (BoW)** without external ML frameworks.
+  - Fully connected linear layer for weight prediction.
+  - Model training powered by **Gradient Descent** (MSE Loss).
 
-## 🚀 Запуск сервиса
+- **`spam_api.py`**: FastAPI microservice for real-time message inference.
+  - Accepts JSON payloads with message text (`POST /predict`).
+  - Returns prediction scores and final verdicts (🚨 SPAM / ✅ Normal).
 
-1. Убедись, что установлены зависимости:
+## 🚀 Quick Start
+
+1. Ensure dependencies are installed:
    ```bash
    pip install numpy fastapi uvicorn pydantic

@@ -1,22 +1,22 @@
-# End-to-End ML & MLOps Pipeline
+# 🚀 End-to-End ML & MLOps Pipeline
 
-Полноценный пайплайн машинного обучения: от реализации кастомных моделей и обучения до сохранения весов и деплоя через веб-сервис.
+A complete machine learning pipeline: from implementing custom models and training, to weight serialization and web service deployment.
 
-## 🛠 Содержимое директории
+## 🛠 Directory Contents
 
-- **Алгоритмы и обучение:**
-  - `linear_regression.py` — реализация линейной регрессии.
-  - `CustomLogisticRegression.py` — кастомная логистическая регрессия.
-  - `metrics.py` — расчет метрик качества моделей.
-  - `train.py` — скрипт обучения модели и сериализации весов.
+- **Algorithms & Training:**
+  - **`linear_regression.py`** — implementation of linear regression.
+  - **`CustomLogisticRegression.py`** — custom logistic regression algorithm.
+  - **`metrics.py`** — calculation of model quality metrics.
+  - **`train.py`** — model training script and weight serialization.
 
-- **Инфраструктура и деплой:**
-  - `model.pkl` — сохраненные веса/артефакт обученной модели.
-  - `app.py` — веб-приложение / API для инференса модели.
-  - `2.py` — вспомогательные скрипты экспериментов.
+- **Infrastructure & Deployment:**
+  - **`model.pkl`** — saved weights / trained model artifact.
+  - **`app.py`** — web application / API for model inference.
+  - **`2.py`** — auxiliary experimental scripts.
 
-## 🚀 Быстрый старт
+## 🚀 Quick Start
 
-1. **Обучение модели и сохранение артефакта (`model.pkl`):**
+1. Train the model and save the artifact (`model.pkl`):
    ```bash
    python train.py
