@@ -1,22 +1,24 @@
-# 🚀 End-to-End ML & MLOps Pipeline
+# 03 - Classical Machine Learning & Inference Service
 
-A complete machine learning pipeline: from implementing custom models and training, to weight serialization and web service deployment.
+This module contains custom implementations of classical ML algorithms (Logistic Regression, Linear Regression), training scripts, and a production-ready FastAPI microservice packaged with Docker.
 
-## 🛠 Directory Contents
+## 📂 Contents
+* `CustomLogisticRegression.py` — Custom implementation of Logistic Regression from scratch.
+* `linear_regression.py` — Linear regression logic.
+* `metrics.py` — Evaluation metrics.
+* `train.py` — Training script that serializes the model into `model.pkl`.
+* `app.py` — FastAPI application providing the `/predict` endpoint.
+* `Dockerfile` — Configuration for containerizing the service.
+* `requirements.txt` — Project dependencies for the module.
 
-- **Algorithms & Training:**
-  - **`linear_regression.py`** — implementation of linear regression.
-  - **`CustomLogisticRegression.py`** — custom logistic regression algorithm.
-  - **`metrics.py`** — calculation of model quality metrics.
-  - **`train.py`** — model training script and weight serialization.
+---
 
-- **Infrastructure & Deployment:**
-  - **`model.pkl`** — saved weights / trained model artifact.
-  - **`app.py`** — web application / API for model inference.
-  - **`2.py`** — auxiliary experimental scripts.
+## 🚀 How to Run
 
-## 🚀 Quick Start
-
-1. Train the model and save the artifact (`model.pkl`):
-   ```bash
-   python train.py
+### Option 1: Run Locally
+1. Install dependencies, train the model, and run the API:
+```bash
+pip install -r requirements.txt
+python train.py
+python -m uvicorn app:app --reload 
+```
