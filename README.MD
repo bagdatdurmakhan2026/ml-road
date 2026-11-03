@@ -39,7 +39,7 @@ A hands-on repository dedicated to building Machine Learning models, classical a
 
 2. **Install dependencies:**
    ```bash
-   pip install fastapi uvicorn numpy pydantic
+   pip install -r requirements.txt
    ```
 
 3. **Train model & generate artifact:**
