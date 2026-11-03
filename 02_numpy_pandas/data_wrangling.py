@@ -2,20 +2,20 @@ import pandas as pd
 import numpy as np
 print("=== БЛОК 3: Data Engineering & Pandas — Очистка и Оптимизация ===")
 # 1. Создаем "грязный" датасет (эмуляция реальных данных)
-np.random.seed(42)
-n_rows = 1_000_000
+np.random.seed(42) # Фиксируем генератор случайных чисел для воспроизводимости
+n_rows = 1_000_000 # Количество строк
 data = {
-    "user_id": np.random.randint(1000, 5000, size=n_rows),
-    "age": np.random.choice([np.nan, 18, 25, 34, 45, 52, 60], size=n_rows),
-    "income": np.random.choice([np.nan, 30000, 50000, 120000, 250000], size=n_rows),
-    "category": np.random.choice(["A", "B", "C", np.nan], size=n_rows)
+    "user_id": np.random.randint(1000, 5000, size=n_rows), # ID пользователя
+    "age": np.random.choice([np.nan, 18, 25, 34, 45, 52, 60], size=n_rows), # Возраст с пропусками
+    "income": np.random.choice([np.nan, 30000, 50000, 120000, 250000], size=n_rows),# Доход с пропусками
+    "category": np.random.choice(["A", "B", "C", np.nan], size=n_rows)#     Категория с пропусками
 }
 df = pd.DataFrame(data)
 # Добавим немного дубликатов для реалистичности
-df = pd.concat([df, df.iloc[:10000]], ignore_index=True)
-print(f"Исходный размер датафрейма: {df.shape}")
+df = pd.concat([df, df.iloc[:10000]], ignore_index=True) # Добавляем 10k дубликатов
+print(f"Исходный размер датафрейма: {df.shape}") # 
 print("\nПотребление памяти до оптимизации:")
-print(df.memory_usage(deep=True) / 1024 ** 2, "MB\n")
+print(df.memory_usage(deep=True) / 1024 ** 2, "MB\n") # 
 # 2. Очистка данных (Data Cleaning)
 # Убираем дубликаты
 df.drop_duplicates(inplace=True)

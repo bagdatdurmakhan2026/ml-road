@@ -10,6 +10,6 @@ matrix_b = np.array([[7, 8],
                      [1, 2]])
 
 # Умножение матриц делается через стандартный оператор @ или функцию np.dot()
-result = matrix_a @ matrix_b
+result = matrix_a @ matrix_b ## result = np.dot(matrix_a, matrix_b) # альтернативный вариант    
 
 print(result)
