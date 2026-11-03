@@ -4,32 +4,32 @@ class CustomLinearRegression:
     def __init__(self, lr=0.01, n_iters=1000):
         self.lr = lr            # Скорость обучения (Learning Rate)
         self.n_iters = n_iters  # Количество эпох/шагов
-        self.weights = None
-        self.bias = None
+        self.weights = None # веса модели (будут инициализированы позже)
+        self.bias = None # смещение модели (будет инициализировано позже)
 
     def fit(self, X, y):
-        n_samples, n_features = X.shape
+        n_samples, n_features = X.shape # Получаем количество образцов и признаков
         
         # 1. Инициализируем веса нулями
-        self.weights = np.zeros(n_features)
+        self.weights = np.zeros(n_features) # 
         self.bias = 0
 
         # 2. Градиентный спуск
         for _ in range(self.n_iters):
             # Предсказание: y_pred = X * w + b
-            y_predicted = np.dot(X, self.weights) + self.bias
+            y_predicted = X @ self.weights + self.bias
             # Суть: Это обычная школьная формула прямой линии $y = kx + b$, только для матриц. Мы умножаем матрицу признаков на веса и прибавляем смещение.
             # 
             # Считаем градиенты (производные MSE по w и b)
-            dw = (1 / n_samples) * np.dot(X.T, (y_predicted - y))
-            db = (1 / n_samples) * np.sum(y_predicted - y)
+            dw = (1 / n_samples) * X.T @ (y_predicted - y) # 1/n *  X.T @ (y_pred - y) #
+            db = (1 / n_samples) * np.sum(y_predicted - y) # 1/2 * np.sum(y_predicted - y) #
 
             # Обновляем параметры (шаг против градиента)
             self.weights -= self.lr * dw
             self.bias -= self.lr * db
 
     def predict(self, X):
-        return np.dot(X, self.weights) + self.bias
+        return X @ self.weights + self.bias
 
 
 # --- БЕНЧМАРК И ПРОВЕРКА ---
