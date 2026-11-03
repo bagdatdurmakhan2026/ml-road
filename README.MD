@@ -33,7 +33,7 @@ A hands-on repository dedicated to building Machine Learning models, classical a
 
 1. **Clone repository & enter project folder:**
    ```bash
-   git clone <your-repo-link>
+   git clone https://github.com/bagdatdurmakhan2026/ml-road.git
    cd 03_classical_ml
    ```
 
