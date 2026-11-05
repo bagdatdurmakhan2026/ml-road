@@ -5,7 +5,7 @@ client = TestClient(app)
 
 def test_predict():
     # Отправляем тестовый POST-запрос с фичами
-    response = client.post("/predict", json={"features": [1.5]})
+    response = client.post("/predict", json={"features": [1.5, 2.0, 3.5]})
     
     # Проверяем, что запрос прошел успешно (статус 200)
     assert response.status_code == 200
